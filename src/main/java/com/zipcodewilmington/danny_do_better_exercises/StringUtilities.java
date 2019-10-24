@@ -60,7 +60,8 @@ public class StringUtilities {
      */
     public static Character getMiddleCharacter(String inputValue){
         char charArray[] = inputValue.toCharArray();
-        return charArray[charArray.length/2-1];
+        if (charArray.length % 2 == 0) {return charArray[charArray.length/2-1];}
+        return charArray[charArray.length/2];
     }
 
     /**
